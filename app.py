@@ -28,7 +28,7 @@ with open("model.pkl", "rb") as f:
 df = pd.read_csv("heart_disease.csv", names=COLUMNS, na_values="?").dropna()
 
 # display some text
-st.title("Heart Disease Risk Predictor")
+st.title("Heart Disease Risk Predictor!")
 
 # ask the user to input values for the features used by the model
 age = st.number_input("Age", min_value=1, max_value=120, value=50)
